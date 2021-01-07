@@ -12,10 +12,10 @@ public class ComputeLoan {
  int numberOfYears=input.nextInt();
  System.out.print("Enter loan amount,e.g.,120000.95:");
  double loanAmount=input.nextDouble();
- double monthlypayment=loanAmount*monthInterestRate/(1-1/Math.pow(1+monthlyInterestRate,numberOfyears*12));
- double totalPayment=monthlyPayment*numberOfYears*12;
- System.out.println("The monthly payment is $"+(int)(monthlyPayment*100)/100.0);
- System.out.println("The total payment is $"+(int)(totalyPayment*100)/100.0);
+ double monthlypayment=loanAmount*monthInterestRate/(1-1/Math.pow(1+monthInterestRate,numberOfYears*12));
+ double totalPayment=monthlypayment*numberOfYears*12;
+ System.out.println("The monthly payment is $"+(int)(monthlypayment*100)/100.0);
+ System.out.println("The total payment is $"+(int)(totalPayment*100)/100.0);
 
 	}
 
